@@ -1,0 +1,144 @@
+/* Gallery Section*/
+
+.h-guide{
+  margin-top:4rem;
+}
+
+.gallery {
+  display: flex;
+  padding: 2rem 14rem 5rem 14rem;
+  transition: 0.3s;
+}
+
+.gallery:hover .gallery_image {
+  filter: grayscale(1);
+}
+
+.gallery .gallery_column {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+.gallery .gallery_link {
+  margin: 2px;
+  overflow: hidden;
+}
+
+.gallery .gallery_link:hover .gallery_image {
+  filter: grayscale(0);
+}
+
+.gallery .gallery_link:hover .gallery_caption {
+  opacity: 1;
+}
+
+.gallery .gallery_thumb {
+  position: relative;
+}
+
+.gallery .gallery_image {
+  display: block;
+  width: 100%;
+  transition: 0.3s;
+}
+
+.gallery .gallery_image:hover {
+  transform: scale(1.1);
+}
+
+.gallery .gallery_caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: white;
+  opacity: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: 0.3s;
+}
+
+/* Colored Boxes Section */
+
+.FlexView-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem 13rem 3rem 13rem;
+}
+
+.project-box {
+  border-radius: 30px;
+  position: relative;
+  margin:auto;
+  margin-bottom:4rem;
+  --main-color-card: bisque;
+  padding: 16px;
+  background-color: var(--main-color-card);
+}
+
+.project-box-content-header {
+  width: 420px;
+  height: 400px;
+}
+
+.project-box-content-header p {
+  text-align: left;
+  font-size: 1.5rem;
+  color:black;
+  padding: 1rem 2rem 1rem 2rem;
+  
+}
+
+.project-box h3 {
+  text-align: center;
+  font-size:2rem;
+  color: #a26f43;
+  font-weight:600;
+}
+
+
+/* Nikon-video Section */
+.video-container {
+  width: 100%;
+  margin: auto;
+  
+}
+
+.nikon {
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.nikon .video-player {
+  position: absolute;
+  top: 69%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.nikon .section-title {
+  text-align: center;
+  font-size: 4rem;
+  color: #a26f43;
+}
+
+
+.nikon .title-box {
+  position: absolute;
+  background-color: #00000096;
+  width: 1200px;
+  left: 19%;
+  top: 3rem;
+  color: #fff;
+  text-shadow: 0 0 3px #000;
+}
